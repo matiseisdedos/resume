@@ -1,0 +1,104 @@
+/*--------- Imports --------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+/*--------- End Imports --------- */
+
+
+/*--------- Globals --------- */
+body{
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+.container{
+    margin: 0 10px;
+}
+.container h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: #06c;
+}
+.col-3{
+    display: grid;
+    grid-template-columns:repeat(3, 33.3%);
+}
+/*--------- End Globals --------- */
+
+
+/*--------- Header --------- */
+
+
+/*--------- Nav --------- */
+nav{
+    background-color: rgba(0,0,0,0.8);
+    color: #f5f5f7;
+    height: 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+a{
+    color: #f5f5f7;
+    font-size: 16px;
+    text-decoration: none;
+    
+}
+
+/*--------- End Nav --------- */
+
+/*--------- Personal Data --------- */
+.shortSummary{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin:10px;
+}
+
+.personalData img{
+    max-width: 200px;
+    border-radius: 50%;
+}
+.personalDesc{
+    background-color: #eeeeee;
+   grid-column: 2/4;
+   border-radius: 20px;
+   border: solid 1px silver;
+   margin: auto;
+  
+}
+
+/*--------- End Personal Data --------- */
+
+/*--------- Techs --------- */
+
+@media screen and (max-width: 400px) {
+    main{
+        display: block;   
+    }
+}
+.tech{
+    background-color:#f5f5f7;
+    margin: 5px;
+    padding: 10px;
+    min-height: 100px;
+    border: 1px solid silver;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.tech img{
+    max-height: 50px;
+    display: block;
+    margin: auto;
+}
+
+/*--------- Education --------- */
+
+.education h2{
+    text-transform: uppercase;
+}
+.education a{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.8);
+}
+/*--------- End Education --------- */
